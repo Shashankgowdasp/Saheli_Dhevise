@@ -1,0 +1,11 @@
+import 'controller/registeradolescentactiity_two_controller.dart';import 'package:flutter/material.dart';import 'package:shashankgowdasp_s_application1/core/app_export.dart';import 'package:shashankgowdasp_s_application1/widgets/app_bar/appbar_image.dart';import 'package:shashankgowdasp_s_application1/widgets/app_bar/appbar_subtitle.dart';import 'package:shashankgowdasp_s_application1/widgets/app_bar/custom_app_bar.dart';class RegisteradolescentactiityTwoScreen extends GetWidget<RegisteradolescentactiityTwoController> {const RegisteradolescentactiityTwoScreen({Key? key}) : super(key: key);
+
+@override Widget build(BuildContext context) { mediaQueryData = MediaQuery.of(context); return SafeArea(child: Scaffold(backgroundColor: theme.colorScheme.primary, body: SizedBox(width: double.maxFinite, child: Column(children: [Container(padding: EdgeInsets.symmetric(vertical: 16.v), decoration: AppDecoration.primary, child: CustomAppBar(height: 24.v, leadingWidth: 42.h, leading: AppbarImage(svgPath: ImageConstant.imgArrowleftPrimary, margin: EdgeInsets.only(left: 18.h), onTap: () {onTapArrowleftone();}), title: AppbarSubtitle(text: "msg_register_adolescent".tr, margin: EdgeInsets.only(left: 12.h)))), Expanded(child: SingleChildScrollView(child: SingleChildScrollView(scrollDirection: Axis.horizontal, padding: EdgeInsets.only(bottom: 700.v), child: IntrinsicWidth(child: Container(padding: EdgeInsets.symmetric(vertical: 9.v), decoration: AppDecoration.fillLightBlue, child: Row(mainAxisAlignment: MainAxisAlignment.end, children: [Padding(padding: EdgeInsets.only(left: 20.h), child: Text("lbl_basic_details".tr, style: theme.textTheme.titleMedium)), Padding(padding: EdgeInsets.only(left: 33.h), child: Text("msg_adolescent_details".tr, style: theme.textTheme.titleMedium)), Padding(padding: EdgeInsets.only(left: 24.h, top: 2.v), child: Text("lbl_family_details".tr, style: theme.textTheme.titleMedium)), Spacer(flex: 64), Text("lbl_health_details".tr, style: theme.textTheme.titleMedium), Spacer(flex: 35), Text("msg_physical_activities".tr, style: theme.textTheme.titleMedium)]))))))])))); } 
+
+
+/// Navigates to the previous screen.
+///
+/// When the action is triggered, this function uses the [Get] package to 
+/// navigate to the previous screen in the navigation stack.
+onTapArrowleftone() { Get.back(); } 
+ }
